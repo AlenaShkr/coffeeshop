@@ -3,7 +3,7 @@
   font-family: sans-serif; }
 
 :root {
-  font-size: 18px; }
+  font-size: 20px; }
 
 body {
   display: flex;
@@ -35,9 +35,26 @@ body {
   text-shadow: darkgray 1px 1px 1px; }
 
 .cup {
+  position: relative;
   width: 15rem;
   height: 15rem;
   background-color: white;
   border: 2px solid black;
-  border-bottom-left-radius: 5rem;
-  border-bottom-right-radius: 5rem; }
+  border-bottom-right-radius: 40%;
+  clip-path: circle(62.1% at 50% 38%); }
+
+.water {
+  height: 0rem;
+  background-color: #d4fcfc; }
+
+.milk {
+  height: 0rem;
+  background-color: wheat; }
+
+.coffee {
+  position: absolute;
+  right: 0;
+  top: 70%;
+  width: 100%;
+  height: 30%;
+  background-color: brown; }
