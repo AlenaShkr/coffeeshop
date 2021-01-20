@@ -1,0 +1,78 @@
+@import 'abstracts/variables';
+@import 'abstracts/fonts';
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  font-size: 18px;
+  @media only screen and (max-width: 1024px){
+    
+  }
+  @media only screen and (max-width: $tablet){
+    
+  }
+  @media only screen and (max-width: $tablet){
+    
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  background: #a1f0d5;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px auto;
+}
+.main {
+  & .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.main-title {
+  font-size: 18px;
+}
+
+.kind-coffe {
+ list-style-type: none;
+}
+
+.coffe-name {
+  margin: 1rem 0rem;
+}
+
+.coffe-name:hover {
+  color: gray;
+  text-shadow: darkgray 1px 1px 1px;
+}
+
+.cup {
+  width: 15rem;
+  height: 15rem;
+  background-color: white;
+  border: 2px solid black;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+
+.water {
+
+}
+
+.milk {
+
+}
+.coffee {
+
+}
