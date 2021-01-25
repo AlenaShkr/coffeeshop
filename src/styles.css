@@ -38,23 +38,19 @@ body {
   position: relative;
   width: 15rem;
   height: 15rem;
-  background-color: white;
-  border: 2px solid black;
-  border-bottom-right-radius: 40%;
-  clip-path: circle(62.1% at 50% 38%); }
+  background: whitesmoke;
+  border-bottom-left-radius: 15rem;
+  border-bottom-right-radius: 15rem;
+  border: 1px gray solid;
+  box-shadow: grey 6px 2px 5px 0px;
+  animation: pour 5s linear; }
 
-.water {
-  height: 0rem;
-  background-color: #d4fcfc; }
-
-.milk {
-  height: 0rem;
-  background-color: wheat; }
-
-.coffee {
-  position: absolute;
-  right: 0;
-  top: 70%;
-  width: 100%;
-  height: 30%;
-  background-color: brown; }
+@keyframes pour {
+  20% {
+    background: linear-gradient(to bottom, whitesmoke 75%, #663e27 76%, #553313 100%); }
+  30% {
+    background: linear-gradient(to bottom, whitesmoke 30%, #f8f8dd 31%, #f8f8dd 72%, #663e27 76%, #553313 100%); }
+  50% {
+    background: linear-gradient(to bottom, #aad2db 29%, #f8f8dd 31%, #f8f8dd 72%, #663e27 76%, #553313 100%); }
+  100% {
+    background: linear-gradient(to bottom, #aad2db 29%, #f8f8dd 31%, #f8f8dd 72%, #663e27 76%, #553313 100%); } }
