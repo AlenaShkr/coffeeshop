@@ -58,10 +58,10 @@ body {
 @keyframes pour {
   20% {
     background: linear-gradient(to bottom, whitesmoke calc(100% - var(--first-comp) - 1%), var(--first-component) calc(100% - var(--first-comp)), var(--first-component) 100%); }
- /* 30% {
-    background: linear-gradient(to bottom, whitesmoke 30%, #f8f8dd 31%, #f8f8dd 72%, #663e27 76%, #553313 100%); }
+  30% {
+    background: linear-gradient(to bottom, whitesmoke var(--third-comp), var(--second-component) calc(var(--third-comp) + 1%), var(--second-component) calc(100% - var(--first-comp) - 3%), var(--first-component) calc(100% - var(--first-comp)), var(--first-component) 100%); }
   50% {
-    background: linear-gradient(to bottom, #aad2db 29%, #f8f8dd 31%, #f8f8dd 72%, #663e27 76%, #553313 100%); }
+    background: linear-gradient(to bottom, var(--third-component) var(--third-comp), var(--second-component) calc(var(--third-comp) + 1%), var(--second-component) calc(100% - var(--first-comp) - 3%), var(--first-component) calc(100% - var(--first-comp)), var(--first-component) 100%); }
   100% {
-    background: linear-gradient(to bottom, #aad2db 29%, #f8f8dd 31%, #f8f8dd 72%, #663e27 76%, #553313 100%); } */
+    background: linear-gradient(to bottom, var(--third-component) var(--third-comp), var(--second-component) calc(var(--third-comp) + 1%), var(--second-component) calc(100% - var(--first-comp) - 3%), var(--first-component) calc(100% - var(--first-comp)), var(--first-component) 100%); }
   }
