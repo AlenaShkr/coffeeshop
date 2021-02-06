@@ -8,8 +8,11 @@ async function getData (coffee) {
 async function handlerClick(ev) {
     let choicedCoffee = ev.target.textContent.toLowerCase();
     const data = await getData(choicedCoffee);
-    const { name, coffee, milk } = data;
-    window.console.log(name, coffee, milk);
+    let ingrediants = Object.keys(data);
+    const { name } = data;
+    const cup = document.body.querySelector('.cup');
+    cup.style = 'animation: pour 5s linear forwards;';
+    window.console.log(cup, name, ingrediants);
 }
 window.onload = function load() {
    const listCoffee = document.querySelector('.kind-coffee');

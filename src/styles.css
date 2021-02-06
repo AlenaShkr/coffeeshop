@@ -53,7 +53,7 @@ body {
   border-bottom-right-radius: 15rem;
   border: 1px gray solid;
   box-shadow: grey 6px 2px 5px 0px;
-  animation: pour 5s linear forwards; }
+   }
 
 @keyframes pour {
   20% {
