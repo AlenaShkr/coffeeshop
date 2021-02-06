@@ -3,7 +3,16 @@
   font-family: sans-serif; }
 
 :root {
-  font-size: 20px; }
+  font-size: 20px;
+  --first-component:  #553313;
+  --second-component: #f8f8dd;
+  --third-component: #aad2db;
+  --forth-component: white;
+  --back-color: whitesmoke;
+  --first-comp: 24%;
+  --sec-comp: 45%;
+  --third-comp: 30%;
+}
 
 body {
   display: flex;
@@ -19,7 +28,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  margin-top: 5%; }
 
 .main-title {
   font-size: 18px; }
@@ -38,7 +48,7 @@ body {
   position: relative;
   width: 15rem;
   height: 15rem;
-  background: whitesmoke;
+  background: var(--back-color);
   border-bottom-left-radius: 15rem;
   border-bottom-right-radius: 15rem;
   border: 1px gray solid;
@@ -47,10 +57,11 @@ body {
 
 @keyframes pour {
   20% {
-    background: linear-gradient(to bottom, whitesmoke 75%, #663e27 76%, #553313 100%); }
-  30% {
+    background: linear-gradient(to bottom, whitesmoke calc(100% - var(--first-comp) - 1%), var(--first-component) calc(100% - var(--first-comp)), var(--first-component) 100%); }
+ /* 30% {
     background: linear-gradient(to bottom, whitesmoke 30%, #f8f8dd 31%, #f8f8dd 72%, #663e27 76%, #553313 100%); }
   50% {
     background: linear-gradient(to bottom, #aad2db 29%, #f8f8dd 31%, #f8f8dd 72%, #663e27 76%, #553313 100%); }
   100% {
-    background: linear-gradient(to bottom, #aad2db 29%, #f8f8dd 31%, #f8f8dd 72%, #663e27 76%, #553313 100%); } }
+    background: linear-gradient(to bottom, #aad2db 29%, #f8f8dd 31%, #f8f8dd 72%, #663e27 76%, #553313 100%); } */
+  }
