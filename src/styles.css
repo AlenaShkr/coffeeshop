@@ -18,14 +18,14 @@ body {
   display: flex;
   flex-direction: column;
   background: #a1f0d5; 
-  --first-component:  #553313;
-  --second-component: #f8f8dd;
-  --third-component: #aad2db;
-  --forth-component: white;
+  --first-component: whitesmoke;
+  --second-component: whitesmoke;
+  --third-component: whitesmoke;
+  --forth-component: whitesmoke;
   --back-color: whitesmoke;
-  --first-comp: 24%;
-  --sec-comp: 45%;
-  --third-comp: 30%;
+  --first-comp: 0%;
+  --sec-comp: 0%;
+  --third-comp: 0%;
 }
 
 .wrapper {

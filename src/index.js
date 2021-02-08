@@ -6,7 +6,7 @@ async function getData (coffee) {
     
 }
 const colours = {
-    'coffee': 'pink',
+    'coffee': 'rgb(110, 55, 18)',
     'milk': '#f8f8dd',
     'water': '#aad2db'
 };
@@ -20,7 +20,8 @@ async function handlerClick(ev) {
     ingrediants.forEach(el => {
         window.console.log(el[0], el[1]);
         if (colours.hasOwnProperty(el[0])) {
-            document.body.style.setProperty(`--first-component`, colours[el[0]])
+            document.body.style.setProperty(`--first-component`, colours[el[0]]);
+            document.body.style.setProperty(`--first-comp`, el[1])
         }
     })
 }
