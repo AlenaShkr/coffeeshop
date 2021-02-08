@@ -15,13 +15,15 @@ async function handlerClick(ev) {
     let choicedCoffee = ev.target.textContent.toLowerCase();
     const data = await getData(choicedCoffee);
     const cup = document.body.querySelector('.cup');
+    cup.style = 'animation: none;';
+    cup.style.backgroundColor = 'whitesmoke';
     cup.style = 'animation: pour 5s linear forwards;';
     const ingrediants = Object.entries(data).slice(1);
-    ingrediants.forEach(el => {
+    ingrediants.forEach((el, index) => {
         window.console.log(el[0], el[1]);
         if (colours.hasOwnProperty(el[0])) {
-            document.body.style.setProperty(`--first-component`, colours[el[0]]);
-            document.body.style.setProperty(`--first-comp`, el[1])
+            document.body.style.setProperty(`--component-${index + 1}`, colours[el[0]]);
+            document.body.style.setProperty(`--comp-${index + 1}`, el[1])
         }
     })
 }

@@ -18,14 +18,14 @@ body {
   display: flex;
   flex-direction: column;
   background: #a1f0d5; 
-  --first-component: whitesmoke;
-  --second-component: whitesmoke;
-  --third-component: whitesmoke;
-  --forth-component: whitesmoke;
+  --component-1: whitesmoke;
+  --component-2: whitesmoke;
+  --component-3: whitesmoke;
+  --component-4: whitesmoke;
   --back-color: whitesmoke;
-  --first-comp: 0%;
-  --sec-comp: 0%;
-  --third-comp: 0%;
+  --comp-1: 0%;
+  --comp-2: 0%;
+  --comp-3: 0%;
 }
 
 .wrapper {
@@ -66,11 +66,11 @@ body {
 
 @keyframes pour {
   20% {
-    background: linear-gradient(to bottom, whitesmoke calc(100% - var(--first-comp) - 1%), var(--first-component) calc(100% - var(--first-comp)), var(--first-component) 100%); }
+    background: linear-gradient(to bottom, whitesmoke calc(100% - var(--comp-1) - 1%), var(--component-1) calc(100% - var(--comp-1)), var(--omponent-1) 100%); }
   30% {
-    background: linear-gradient(to bottom, whitesmoke var(--third-comp), var(--second-component) calc(var(--third-comp) + 1%), var(--second-component) calc(100% - var(--first-comp) - 3%), var(--first-component) calc(100% - var(--first-comp)), var(--first-component) 100%); }
+    background: linear-gradient(to bottom, whitesmoke var(--comp-3), var(--component-2) calc(var(--comp-3) + 1%), var(--component-2) calc(100% - var(--comp-1) - 3%), var(--component-1) calc(100% - var(--comp-1)), var(--component-1) 100%); }
   50% {
-    background: linear-gradient(to bottom, var(--third-component) var(--third-comp), var(--second-component) calc(var(--third-comp) + 1%), var(--second-component) calc(100% - var(--first-comp) - 3%), var(--first-component) calc(100% - var(--first-comp)), var(--first-component) 100%); }
+    background: linear-gradient(to bottom, var(--component-3) var(--comp-3), var(--component-2) calc(var(--comp-3) + 1%), var(--component-2) calc(100% - var(--comp-1) - 3%), var(--component-1) calc(100% - var(--comp-1)), var(--component-1) 100%); }
   100% {
-    background: linear-gradient(to bottom, var(--third-component) var(--third-comp), var(--second-component) calc(var(--third-comp) + 1%), var(--second-component) calc(100% - var(--first-comp) - 3%), var(--first-component) calc(100% - var(--first-comp)), var(--first-component) 100%); }
+    background: linear-gradient(to bottom, var(--component-3) var(--comp-3), var(--component-2) calc(var(--comp-3) + 1%), var(--component-2) calc(100% - var(--comp-1) - 3%), var(--component-1) calc(100% - var(--comp-1)), var(--component-1) 100%); }
   }
