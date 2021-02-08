@@ -7,8 +7,9 @@ async function getData (coffee) {
 }
 const colours = {
     'coffee': 'rgb(110, 55, 18)',
-    'milk': '#f8f8dd',
-    'water': '#aad2db'
+    'milk': '#f8f8de',
+    'water': '#aad2db',
+    'whippedmilk': 'rgb(247, 247, 191)'
 };
 
 async function handlerClick(ev) {
@@ -16,8 +17,15 @@ async function handlerClick(ev) {
     const data = await getData(choicedCoffee);
     const cup = document.body.querySelector('.cup');
     cup.style = 'animation: none;';
-    cup.style.backgroundColor = 'whitesmoke';
-    cup.style = 'animation: pour 5s linear forwards;';
+    document.body.style.setProperty(`--component-1`, 'whitesmoke');
+    document.body.style.setProperty(`--component-2`, 'whitesmoke');
+    document.body.style.setProperty(`--component-3`, 'whitesmoke');
+    document.body.style.setProperty(`--component-4`, 'whitesmoke');
+    document.body.style.setProperty(`--comp-1`, '0%');
+    document.body.style.setProperty(`--comp-2`, '0%');
+    document.body.style.setProperty(`--comp-3`, '0%');
+    document.body.style.setProperty(`--comp-4`, '0%');
+    cup.style = 'animation: pour 3s linear forwards;';
     const ingrediants = Object.entries(data).slice(1);
     ingrediants.forEach((el, index) => {
         window.console.log(el[0], el[1]);
