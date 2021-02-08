@@ -4,6 +4,20 @@
 
 :root {
   font-size: 20px;
+  /* --first-component:  #553313;
+  --second-component: #f8f8dd;
+  --third-component: #aad2db;
+  --forth-component: white;
+  --back-color: whitesmoke;
+  --first-comp: 24%;
+  --sec-comp: 45%;
+  --third-comp: 30%; */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: #a1f0d5; 
   --first-component:  #553313;
   --second-component: #f8f8dd;
   --third-component: #aad2db;
@@ -13,11 +27,6 @@
   --sec-comp: 45%;
   --third-comp: 30%;
 }
-
-body {
-  display: flex;
-  flex-direction: column;
-  background: #a1f0d5; }
 
 .wrapper {
   max-width: 1200px;
